@@ -20,35 +20,69 @@ if (window.matchMedia("(min-width:500px)").matches) {
 
 
 // feature open
-$("#open1").click(function() {
-  $("#feature").css("display", "block");
-  $("#hide1").css("display", "flex");
-});
 
-$("#open2").click(function() {
-  $("#feature").css("display", "block");
-  $("#hide2").css("display", "flex");
-});
+if (window.matchMedia("(min-width:500px)").matches) {
+  $("#open1").click(function() {
+    $("#feature").css("display", "block");
+    $("#hide1").css("display", "flex");
+  });
+  
+  $("#open2").click(function() {
+    $("#feature").css("display", "block");
+    $("#hide2").css("display", "flex");
+  });
+  
+  $("#open3").click(function() {
+    $("#feature").css("display", "block");
+    $("#hide3").css("display", "flex");
+  });
+  
+  $("#open4").click(function() {
+    $("#feature").css("display", "block");
+    $("#hide4").css("display", "flex");
+  });
+  
+  $("#open5").click(function() {
+    $("#feature").css("display", "block");
+    $("#hide5").css("display", "flex");
+  });
+  
+  $("#open6").click(function() {
+    $("#feature").css("display", "block");
+    $("#hide6").css("display", "flex");
+  });
+} else {
+  $("#open1").click(function() {
+    $("#feature").css("display", "block");
+    $("#hide1").css("display", "block");
+  });
+  
+  $("#open2").click(function() {
+    $("#feature").css("display", "block");
+    $("#hide2").css("display", "block");
+  });
+  
+  $("#open3").click(function() {
+    $("#feature").css("display", "block");
+    $("#hide3").css("display", "block");
+  });
+  
+  $("#open4").click(function() {
+    $("#feature").css("display", "block");
+    $("#hide4").css("display", "block");
+  });
+  
+  $("#open5").click(function() {
+    $("#feature").css("display", "block");
+    $("#hide5").css("display", "block");
+  });
+  
+  $("#open6").click(function() {
+    $("#feature").css("display", "block");
+    $("#hide6").css("display", "block");
+  });
+}
 
-$("#open3").click(function() {
-  $("#feature").css("display", "block");
-  $("#hide3").css("display", "flex");
-});
-
-$("#open4").click(function() {
-  $("#feature").css("display", "block");
-  $("#hide4").css("display", "flex");
-});
-
-$("#open5").click(function() {
-  $("#feature").css("display", "block");
-  $("#hide5").css("display", "flex");
-});
-
-$("#open6").click(function() {
-  $("#feature").css("display", "block");
-  $("#hide6").css("display", "flex");
-});
 
 // feature close
 $("#close").click(function() {

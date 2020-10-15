@@ -371,6 +371,9 @@ footer p {
     padding: 0;
     display: block;
   }
+  #feature .hide .hide-img {
+    margin-top: 6em;
+  }
   #feature .hide .half {
     width: 100%;
   }

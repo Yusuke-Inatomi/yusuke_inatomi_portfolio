@@ -390,8 +390,10 @@ footer {
   #feature {
     .hide {
       padding: 0;
-      // jquery修正
       display: block;
+      .hide-img {
+        margin-top: 6em;
+      }
       .half {
         width: 100%;
       }
