@@ -79,40 +79,27 @@ main {
 }
 
 // title
-.titles {
-  background-image: url(pf-img/title.jpg);
-  background-attachment: fixed;
-  background-position: bottom;
-  background-size: cover;
-  height: 100%;
-  font-size: 3em;
-  letter-spacing: 0.3em;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  z-index: -2;
-  #title {
-    margin-top: 3.5em;
+#title {
+  margin-top: 3.5em;
+  width: 100%;
+  .marker {
+    position: relative;
     width: 100%;
-    .marker {
-      position: relative;
-      width: 100%;
-      h1 {
-        display: none;
-      }
-      h2 {
-        display: none;
-        margin: 0.3em;
-        font-size: 1em;
-        letter-spacing: 0.5em;
-      }
-      .none, .none2 {
-        display: none;
-      }
+    h1 {
+      display: none;
+    }
+    h2 {
+      display: none;
+      margin: 0.3em;
+      font-size: 1em;
+      letter-spacing: 0.5em;
+    }
+    .none, .none2 {
+      display: none;
     }
   }
 }
+
 
 .marker-anime {
   position: absolute;
@@ -184,6 +171,10 @@ main {
       h2 {
         margin-top: 1em;
         font-size: 1.5em;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+      }
+      p  {
+        font-family: 'M PLUS 1p', sans-serif;
       }
       img {
         cursor: pointer;
@@ -306,6 +297,7 @@ main {
 #contact {
   height: 30em;
   padding-bottom: 3em;
+  background-color: white;
   #contact-sns {
     width: 30%;
     margin: 3em auto;
@@ -357,6 +349,7 @@ main {
 
 // footer
 footer {
+  background-color: white;
   height:2em;
   line-height: 2em;
   font-weight: lighter;
@@ -367,8 +360,28 @@ footer {
   }
 }
 
-// メディアクエリ
-@media screen and (max-width: 500px) {
+// PC・タブレット
+@media screen and (min-width: 600px) {
+  .titles {
+    background-image: url(pf-img/title.jpg);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    font-size: 3em;
+    letter-spacing: 0.3em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: -2;
+  }
+}
+
+// メディアクエリ(スマホ)
+@media screen and (max-width: 599px) {
 
   header ul a {
     letter-spacing: 0.2em;
@@ -381,6 +394,27 @@ footer {
 
   .titles {
     font-size: 2em;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    letter-spacing: 0.3em;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+  .titles::before {
+    content:"";
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: -2;
+    background-image: url(pf-img/title.jpg);
+    background-position: bottom;
+    background-size: cover;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
   }
 
   #works .portfolios .portfolio {
